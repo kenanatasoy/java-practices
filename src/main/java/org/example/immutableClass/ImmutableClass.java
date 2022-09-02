@@ -11,7 +11,7 @@ public final class ImmutableClass {
     public ImmutableClass(String name, String birthYear, List<String> marks) {
         this.name = name;
         this.birthYear = birthYear;
-        this.marks = marks;//TODO deep copy
+        this.marks = marks; //TODO: deep copy must be performed
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public final class ImmutableClass {
 
     public List<String> getMarks() {
 
-        //TODO deep copy
+        //TODO deep copy must be performed
         return marks;
     }
 

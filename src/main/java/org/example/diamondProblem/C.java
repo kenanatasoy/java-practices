@@ -1,6 +1,6 @@
 package org.example.diamondProblem;
 
-public class C implements A, B{
+public class C implements A, B {
 
     @Override
     public void fly() {

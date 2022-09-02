@@ -10,8 +10,7 @@ public class Main {
 
     public static void main( String[] args ) throws Exception {
 
-        Class<?> class1 = Class.forName("org.example.practices.A");
-
+        Class<?> class1 = Class.forName("org.example.Student");
         Constructor<?> constructor = class1.getDeclaredConstructor();
         constructor.setAccessible(true);
         A a = (A) constructor.newInstance();

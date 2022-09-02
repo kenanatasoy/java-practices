@@ -9,8 +9,13 @@ public final class SingletonClass {
 
     public static SingletonClass getInstance(){
 
-        if(single_instance == null)
-            single_instance = new SingletonClass();
+        if(single_instance == null){ //double-checked locking
+            synchronized (SingletonClass.class){
+                if(single_instance == null)
+                    single_instance = new SingletonClass();
+            }
+        }
+
         return single_instance;
     }
 
